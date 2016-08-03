@@ -48,3 +48,9 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+//Wlasne style
+@import "colors";
+@import "variables";
+@import "pages/login";
+@import "components/icons";
+@import "style";
