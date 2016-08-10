@@ -21,6 +21,12 @@ body{
   position: relative;
   background-image: url('../images/efi3.jpg');
 }
+.czer_pasek{
+  height:auto;
+  background:red;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius:4px;
+}
 .avatar{
   margin:auto;
   width:100px;
