@@ -1,14 +1,40 @@
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
 .bg-blue{
+  padding: 40px 30px 40px 30px;
+  text-align: center;
+  color:white;
   background: $blue;
+  border-radius:4px;
 }
 .logo{
-  border-style:solid;
-  border-width:3px;
-  border-color:white;
+  padding:30px 30px 30px 30px;
+  border:2px solid rgba(255,255,255, 0.5);
   border-radius:4px;
-  background:green;
+  background:none;
 }
 .login-background{
+  padding-top:20px;
+  padding-bottom:20px;
   position: relative;
-  background-image: url("images/efi3.jpg");
+  background-image: url('../images/efi3.jpg');
+}
+.avatar{
+  margin:auto;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background:red;
+  overflow:hidden;
+  transform: translate(0, -40px);
+}
+form{
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius:4px;
+}
+.menu{
+  color:white;
+
 }
