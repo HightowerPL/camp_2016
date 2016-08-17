@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
     $('.button').on('click', function(event) {
-    let password =$('#password').val();
-    sendAjax(password);
+      let password =$('#password').val();
+      sendAjax(password);
   });
 
   function sendAjax(pass){
