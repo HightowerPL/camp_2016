@@ -1,47 +1,128 @@
+
 header{
-  padding:20px 0 20px 0;
+  height:15%;
+  padding:0;
   background-color: $blue;
+  .logoava{
+    padding:5px 0 5px 0;
+    margin:0;
+  }
   .logo{
-    border:2px solid rgba(255,255,255, 0.5);
-    border-radius:4px;
-    height:100px;
-    width:100px;
+    border: 2px solid rgba(255,255,255, 0.5);
+    border-radius: 4px;
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    float: left;
   }
   .ava_dash{
-    border:2px solid rgba(255,255,255, 0.5);
     border-radius:4px;
-    height:100px;
-    width:100px;
+    height:80px;
+    width:80px;
     overflow:hidden;
+    float:right;
+    margin:10px 0 10px 0;
   }
+  .nameMsgSet{
+    padding-top:5px;
+    padding-bottom:5px;
+    .user{
+      font-size:1.5rem;
+    }
+    .settings{
+      font-size: 2rem;
+      &:hover{
+        font-size: 1rem;
+      }
+    }
+   }
+  }
+
   i{
     font-size:1.5rem;
   }
-  nav {
-    ul{
-
+  li:hover{
+      background-color: black;
+  }
+  nav{
+    ul.menu{
+      margin: 0;
+      padding: 0;
+      :after{
+        content:'';
+        display: block;
+        clear: both;
+      }
       li{
-        padding:0 20px 0 20px;
+        width: 85px;
+        margin: auto;
         list-style: none;
         display: inline-block;
-        text-align:center;
-        i{
-          font-size:2rem;
-        }
-        span{
-          font-size:1rem;
+        text-align: center;
+        -moz-transition: background-color 1s, color 1s;
+        transition: background-color 1s, color 1s;
+        a{
           display:block;
+          color:white;
+        }
+        i{
+          margin-right:0;
+          font-size:3rem;
+        }
+        p{
+          font-size:1rem;
         }
       }
     }
   }
   .koniec{
+    float:right;
+    height:100%;
     i{
+      padding:5px;
       font-size:2.5rem;
+    }
+    .fi-power{
+      border-left: 1px solid rgba(255,255,255, 0.5);;
+      color:#e21a61;
+    }
+  }
+
+
+main{
+  background-color:#d9dada;
+  color:black;
+  .finance_life{
+    padding-top:10px;
+    h1{
+      color:black;
+    }
+    p{
+      font-size:1rem;
+    }
+    .money{
     }
   }
 }
 
 .container{
   margin:auto;
+}
+
+.list_component{
+  max-height: 200px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: auto;
+  margin:auto;
+  ul {
+    list-style-type: none;
+    li{
+      border-bottom: 2px solid rgba(0,0,0, 0.5);
+      &:hover{
+        background-color: rgba(19,189,210, 0.5)
+      }
+    }
+  }
 }

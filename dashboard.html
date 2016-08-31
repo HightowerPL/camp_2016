@@ -9,56 +9,160 @@
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
   </head>
-
   <body>
     <div class="container">
     <header>
       <div class="row">
-        <div class="small-1 column">
-          <div class="logo">
-            <a href="#" alt="logo"><img src="images/efi_logo.png"></a>
-          </div>
+        <div class="small-2 columns">
+            <div class="logo">
+              <a href="#" alt="logo"><img src="images/efi_logo.png"></a>
+            </div>
+            <div class="ava_dash">
+              <a href="#" alt="avatar"><img src="images/avatar.jpg"></a>
+            </div>
         </div>
-        <div class="small-1 column">
-          <div class="ava_dash">
-            <a href="#" alt="avatar"><img src="images/avatar.jpg"></a>
-          </div>
-        </div>
-        <div class="small-3 columns">
-          <div class="row">
-              <p>Jan Kowalski</p>
-          </div>
-          <div class="row">
-              <a href="#"><i class="fi-mail"></i></a>
-              <a href="#"><i class="fi-widget"></i></a>
-          </div>
+        <div class="small-3 columns nameMsgSet">
+            <div class="row">
+                <span class="user">Jan Kowalski</span>
+            </div>
+            <div class="row">
+                  <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Nie masz nowych wiadomości">
+                  <a href="#"><i class="fi-mail"></i></a>
+                </span>&nbsp &nbsp
+                  <a class="settings" href="#"><i class="fi-widget"></i></a>
+            </div>
         </div>
         <div class="small-4 columns">
-          <nav>
-            <ul>
+          <nav class="menu-centered">
+            <ul class="menu">
               <li>
-                <a href="#"><i class="fi-mail"></i><span>HOME</span></a>
+                <a href="#"><i class="fi-mail"></i><p>HOME</p></i></a>
               </li>
               <li>
-                <a href="#"><i class="fi-mail"></i><span>ANALYSE</span></a>
+                <a href="#"><i class="fi-magnifying-glass"></i><p>ANALYSE</p></a>
               </li>
               <li>
-                <a href="#"><i class="fi-mail"></i><span>PLAN</span></a>
+                <a href="#"><i class="fi-clipboard-notes"></i><p>PLAN</p></a>
               </li>
               <li>
-                <a href="#"><i class="fi-mail"></i><span>EARN</span></a>
+                <a href="#"><i class="fi-dollar-bill"></i><p>EARN</p></a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="small-3 columns right">
+        <div class="small-3 columns">
           <div class="koniec">
             <a href="#"><i class="fi-magnifying-glass"></i></a>
-            <a href="#"><i class="fi-widget"></i></a>
+            <a href="#"><i class="fi-power" color="red"></i></a>
           </div>
         </div>
       </div>
 
     </header>
+    <main>
+      <section class="finance_life">
+        <div class="row">
+          <h1>Finance life stream</h1>
+          <div class="small-3 columns">
+            <p>Balance</p>
+            <span class="livebal"></span>
+          </div>
+          <div class="small-3 columns">
+            <p>Available funds</p>
+            <span class="livefun"></span>
+          </div>
+          <div class="small-3 columns end">
+            <p>Scheduled payments</p>
+            <span class="livepay"></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="small-6 columns">
+        </div>
+        <div class="small-6 columns">
+          <h3>History</h3>
+          <div class="list_component">
+            <ul class="listHis">
+              <li class="row">
+                  <div class="medium-2 columns">
+                    <span class="dataTrn">29.06</span>
+                  </div>
+                  <div class="medium-6 columns">
+                    <span class="opisTrn">Gas station< Shell, Warsaw</p>
+                  </div>
+                  <div class="medium-4 columns">
+                    <span class="kwotaTrn">40,70</span><span class="walutaTrn">PLN</span>
+                  </div>
+              </li>
+              <li class="row">
+                  <div class="medium-2 columns">
+                    <p>28.06</p>
+                  </div>
+                  <div class="medium-6 columns">
+                    <p>Burger, Cracov</p>
+                  </div>
+                  <div class="medium-4 columns">
+                    <span class="money">100,55</span>PLN
+                  </div>
+              </li>
+              <li class="row">
+                  <div class="medium-2 columns">
+                    <p>27.06</p>
+                  </div>
+                  <div class="medium-6 columns">
+                    <p>Sliwki, Szydlow</p>
+                  </div>
+                  <div class="medium-4 columns">
+                    <span class="money">999,99</span>EURO
+                  </div>
+              </li>
+              <li class="row">
+                  <div class="medium-2 columns">
+                    <p>29.06</p>
+                  </div>
+                  <div class="medium-6 columns">
+                    <p>Gas station< Shell, Warsaw</p>
+                  </div>
+                  <div class="medium-4 columns">
+                    <span class="money">40,70</span>PLN
+                  </div>
+              </li>
+              <li class="row">
+                  <div class="medium-2 columns">
+                    <p>28.06</p>
+                  </div>
+                  <div class="medium-6 columns">
+                    <p>Burger, Cracov</p>
+                  </div>
+                  <div class="medium-4 columns">
+                    <span class="money">100,55</span>PLN
+                  </div>
+              </li>
+              <li class="row">
+                  <div class="medium-2 columns">
+                    <p>27.06</p>
+                  </div>
+                  <div class="medium-6 columns">
+                    <p>Sliwki, Szydlow</p>
+                  </div>
+                  <div class="medium-4 columns">
+                    <span class="money">999,99</span>EURO
+                  </div>
+              </li>
+              <li class="row"></li>
+            </ul>
+          </div>
+      </div>
     </div>
+    </main>
+
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/cash_value.js"></script>
+    <script src="js/history.js"></script>
   </body>
+  </html>
