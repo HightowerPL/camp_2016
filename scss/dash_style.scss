@@ -1,3 +1,6 @@
+@keyframes obrot{
+  to {transform: rotate(360deg);}
+}
 header{
   height:15%;
   padding:0;
@@ -32,7 +35,8 @@ header{
     .settings{
       font-size: 2rem;
       &:hover{
-        font-size: 1rem;
+        transform-origin: 49% 55%;
+        animation: obrot 3s linear 0s infinite;
       }
     }
    }
@@ -100,6 +104,10 @@ main{
     h1{
       color:black;
     }
+    h3{
+      padding-bottom:0;
+      margin-bottom:0;
+    }
     p{
       font-size:1rem;
     }
@@ -153,6 +161,8 @@ main{
   padding:20px;
 }
 .addBtn{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight:300;
   padding: 10px 0 10px 0;
   margin-right:10px;
   margin-bottom:0;
