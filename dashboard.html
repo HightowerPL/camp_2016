@@ -7,7 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet"> 
   </head>
   <body>
     <div class="container">
@@ -57,32 +57,99 @@
           </div>
         </div>
       </div>
-
     </header>
+
     <main>
       <section class="finance_life">
         <div class="row">
-          <h1>Finance life stream</h1>
-          <div class="small-3 columns">
-            <p>Balance</p>
-            <span class="livebal"></span>
+          <div class="small-12 medium-9 columns">
+            <h1>Finance life stream</h1>
+            <div class="row">
+              <div class="small-4 columns">
+                <h3>Balance</h3>
+                <span class="livebal"></span>
+              </div>
+              <div class="small-4 columns">
+                <h3>Available funds</h3>
+                <span class="livefun"></span>
+              </div>
+              <div class="small-4 columns end">
+                <h3>Scheduled payments</h3>
+                <span class="livepay"></span>
+              </div>
+            </div>
           </div>
-          <div class="small-3 columns">
-            <p>Available funds</p>
-            <span class="livefun"></span>
-          </div>
-          <div class="small-3 columns end">
-            <p>Scheduled payments</p>
-            <span class="livepay"></span>
+
+          <div class="medium-3 columns">
+            <div class="row add align-middle">
+              <span>Add&nbsp&nbsp</span>
+              <a href="" class="button addBtn">BANK</a>
+              <a href="" class="button addBtn">PAYMENT</a>
+            </div>
+            <div class="row accAna align-middle">
+              <span>Account analysis &nbsp</span>
+              <div class="success switch">
+                <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+                <label class="switch-paddle" for="yes-no">
+                  <span class="switch-active" aria-hidden="true">ON</span>
+                  <span class="switch-inactive" aria-hidden="true">OFF</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="row">
-        <div class="small-6 columns">
+      <section class="wykres">
+        <div class="row">
+          <div class="small-12 columns">
+            <img src="images/wykres.png" alt="wykres">
+          </div>
         </div>
-        <div class="small-6 columns">
-          <h3>History</h3>
+
+<!-- Segment po wykresie -->
+      <div class="row">
+        <!---Produkty -->
+        <div class="small-12 medium-6 columns">
+          <h5>Products</h5>
+          <div class="row">
+            <div class="small-6 columns prodBtn">
+                <i class="fi-magnifying-glass"></i>
+                <p>Wallets</p>
+                <p><strong>7,000,000</strong> PLN</p>
+            </div>
+            <div class="small-6 columns prodBtn">
+              <i class="fi-widget"></i>
+              <p>Wallets</p>
+              <p><strong>7,000,000</strong> PLN</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-6 columns prodBtn">
+                <i class="fi-magnifying-glass"></i>
+                <p>Wallets</p>
+                <p><strong>7,000,000</strong> PLN</p>
+            </div>
+            <div class="small-6 columns prodBtn">
+              <i class="fi-widget"></i>
+              <p>Wallets</p>
+              <p><strong>7,000,000</strong> PLN</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-6 columns prodBtn">
+                <i class="fi-magnifying-glass"></i>
+                <p>Wallets</p>
+                <p><strong>7,000,000</strong> PLN</p>
+            </div>
+          </div>
+        </div>
+
+<!-- Historia transakcji -->
+        <div class="small-12 medium-6 columns">
+          <h5>History</h5>
           <div class="list_component">
             <ul class="listHis">
               <li class="row">
@@ -94,39 +161,6 @@
                   </div>
                   <div class="medium-4 columns">
                     <span class="kwotaTrn">40,70</span><span class="walutaTrn">PLN</span>
-                  </div>
-              </li>
-              <li class="row">
-                  <div class="medium-2 columns">
-                    <p>28.06</p>
-                  </div>
-                  <div class="medium-6 columns">
-                    <p>Burger, Cracov</p>
-                  </div>
-                  <div class="medium-4 columns">
-                    <span class="money">100,55</span>PLN
-                  </div>
-              </li>
-              <li class="row">
-                  <div class="medium-2 columns">
-                    <p>27.06</p>
-                  </div>
-                  <div class="medium-6 columns">
-                    <p>Sliwki, Szydlow</p>
-                  </div>
-                  <div class="medium-4 columns">
-                    <span class="money">999,99</span>EURO
-                  </div>
-              </li>
-              <li class="row">
-                  <div class="medium-2 columns">
-                    <p>29.06</p>
-                  </div>
-                  <div class="medium-6 columns">
-                    <p>Gas station< Shell, Warsaw</p>
-                  </div>
-                  <div class="medium-4 columns">
-                    <span class="money">40,70</span>PLN
                   </div>
               </li>
               <li class="row">

@@ -5,8 +5,8 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+//@include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -55,3 +55,5 @@
 @import "components/icons";
 @import "style";
 @import "dash_style";
+@import "fonts";
+@import "mixins";
