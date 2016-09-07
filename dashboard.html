@@ -13,15 +13,11 @@
     <div class="container">
     <header>
       <div class="row">
-        <div class="small-2 columns">
-            <div class="logo">
-              <a href="#" alt="logo"><img src="images/efi_logo.png"></a>
-            </div>
-            <div class="ava_dash">
-              <a href="#" alt="avatar"><img src="images/avatar.jpg"></a>
-            </div>
+        <div class="small-6 medium-2 columns logoAva">
+              <a href="#" alt="Efi3"><img class="logoM" src="images/efi_logo.png"/></a>
+              <a href="#" alt="Profile"><img class="avatarM" src="images/avatar.jpg"/></a>
         </div>
-        <div class="small-3 columns nameMsgSet">
+        <div class="small-6 medium-3 columns nameMsgSet">
             <div class="row">
                 <span class="user">Jan Kowalski</span>
             </div>
@@ -32,7 +28,7 @@
                   <a class="settings" href="#"><i class="fi-widget"></i></a>
             </div>
         </div>
-        <div class="small-4 columns">
+        <div class="small-12 medium-4 columns navi">
           <nav class="menu-centered">
             <ul class="menu">
               <li>
@@ -50,15 +46,17 @@
             </ul>
           </nav>
         </div>
-        <div class="small-3 columns">
-          <div class="koniec">
-            <a href="#"><i class="fi-magnifying-glass"></i></a>
-            <a href="#"><i class="fi-power" color="red"></i></a>
+        <div class="small-12 medium-3 columns srcLog align-middle">
+          <a href="#"><i class="fi-power" color="red"></i></a>
+          <div id="wrap">
+            <form action="" autocomplete="on">
+            <input id="search" name="search" type="text" placeholder="Search..."><input id="search_submit" value="Rechercher" type="submit">
+            </form>
           </div>
         </div>
       </div>
     </header>
-
+<!-- Poczatek Finance Life Stream -->
     <main>
       <section class="finance_life">
         <div class="row">
@@ -82,7 +80,7 @@
 
           <div class="medium-3 columns">
             <div class="row add align-middle">
-              <span>Add&nbsp&nbsp</span>
+              <span>Add&nbsp</span>
               <a href="" class="button addBtn">BANK</a>
               <a href="" class="button addBtn">PAYMENT</a>
             </div>
@@ -98,100 +96,64 @@
             </div>
           </div>
         </div>
-      </section>
+      </section><br>
 
       <section class="wykres">
+
         <div class="row">
           <div class="small-12 columns">
             <img src="images/wykres.png" alt="wykres">
           </div>
-        </div>
+        </div><br>
 
 <!-- Segment po wykresie -->
       <div class="row">
         <!---Produkty -->
         <div class="small-12 medium-6 columns">
-          <h5>Products</h5>
-          <div class="row">
-            <div class="small-6 columns prodBtn">
-                <i class="fi-magnifying-glass"></i>
+          <h3>Products</h3>
+          <div class="row small-unstack">
+            <div class="columns prodBtn">
+                <i class="fi-credit-card"></i>
                 <p>Wallets</p>
-                <p><strong>7,000,000</strong> PLN</p>
+                <p>500,000 PLN</p>
             </div>
-            <div class="small-6 columns prodBtn">
-              <i class="fi-widget"></i>
-              <p>Wallets</p>
-              <p><strong>7,000,000</strong> PLN</p>
+            <div class="columns prodBtn">
+              <i class="fi-lock"></i>
+              <p>Deposits</p>
+              <p>10,000,000 PLN</p>
             </div>
           </div>
 
-          <div class="row">
-            <div class="small-6 columns prodBtn">
-                <i class="fi-magnifying-glass"></i>
-                <p>Wallets</p>
-                <p><strong>7,000,000</strong> PLN</p>
+          <div class="row small-unstack">
+            <div class="columns prodBtn">
+                <i class="fi-list-thumbnails"></i>
+                <p>Accounts</p>
+                <p>7,200,000 PLN</p>
             </div>
-            <div class="small-6 columns prodBtn">
-              <i class="fi-widget"></i>
-              <p>Wallets</p>
-              <p><strong>7,000,000</strong> PLN</p>
+            <div class="columns prodBtn">
+              <i class="fi-graph-bar"></i>
+              <p>Funds</p>
+              <p>7,000,000 PLN</p>
             </div>
           </div>
-
-          <div class="row">
-            <div class="small-6 columns prodBtn">
-                <i class="fi-magnifying-glass"></i>
-                <p>Wallets</p>
-                <p><strong>7,000,000</strong> PLN</p>
+          <div class="row small-unstack">
+            <div class="columns loans">
+                <i class="fi-dislike"></i><p>Bank loans</p><p>-127,000,000 PLN</p>
+            </div>
+            <div class="columns loans" style="visibility:hidden;">
             </div>
           </div>
         </div>
-
 <!-- Historia transakcji -->
         <div class="small-12 medium-6 columns">
-          <h5>History</h5>
+          <h3>History</h3>
           <div class="list_component">
             <ul class="listHis">
-              <li class="row">
-                  <div class="medium-2 columns">
-                    <span class="dataTrn">29.06</span>
-                  </div>
-                  <div class="medium-6 columns">
-                    <span class="opisTrn">Gas station< Shell, Warsaw</p>
-                  </div>
-                  <div class="medium-4 columns">
-                    <span class="kwotaTrn">40,70</span><span class="walutaTrn">PLN</span>
-                  </div>
-              </li>
-              <li class="row">
-                  <div class="medium-2 columns">
-                    <p>28.06</p>
-                  </div>
-                  <div class="medium-6 columns">
-                    <p>Burger, Cracov</p>
-                  </div>
-                  <div class="medium-4 columns">
-                    <span class="money">100,55</span>PLN
-                  </div>
-              </li>
-              <li class="row">
-                  <div class="medium-2 columns">
-                    <p>27.06</p>
-                  </div>
-                  <div class="medium-6 columns">
-                    <p>Sliwki, Szydlow</p>
-                  </div>
-                  <div class="medium-4 columns">
-                    <span class="money">999,99</span>EURO
-                  </div>
-              </li>
-              <li class="row"></li>
             </ul>
           </div>
       </div>
     </div>
     </main>
-
     </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>

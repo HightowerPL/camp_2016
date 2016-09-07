@@ -1,5 +1,4 @@
 @charset 'utf-8';
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -49,11 +48,9 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 //Wlasne style
-@import "colors";
-@import "variables";
+@import "components/variables";
 @import "pages/login";
 @import "components/icons";
-@import "style";
-@import "dash_style";
-@import "fonts";
-@import "mixins";
+@import "pages/dash_style";
+@import "components/fonts";
+@import "util/mixins";
