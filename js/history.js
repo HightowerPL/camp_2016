@@ -11,6 +11,7 @@ function ajaxPost( data, endpoint, method, success ) {
       success(msg);
     })
 }
+
 ajaxPost({}, "/data/history", "GET", function(response) {
   $('.dateTrn').html(response.content[0].date);
   $('.descTrn').html(response.content[0].description);

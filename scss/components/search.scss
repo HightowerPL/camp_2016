@@ -1,0 +1,63 @@
+//Search Wrapper
+.wrap {
+  padding: 0;
+  position: relative;
+  width:100px;
+  background-color: #13bdd2;
+  float: right;
+  .srcForm{
+    margin: auto;
+    padding: 10px;
+    border: none;
+    float: right;
+  }
+}
+
+.inputSrcText{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  height: 40px;
+  cursor: pointer;
+  width: 40px;
+  border-radius: 4px 0 0 4px;
+  padding: 3px 3px 3px 5px;
+  margin: 0;
+  z-index: 4;
+  opacity: 0;
+  @include transition(width .4s);
+  float: right;
+}
+.inputSrcText:focus{
+  position: absolute;
+  right: 55px;
+  width: 200px;
+  cursor: text;
+  background: $dark-blue;
+  box-shadow: none;
+  border:none;
+  color: white;
+  border-bottom: 1px dotted white;
+  padding-bottom: 0px;
+  z-index: 1;
+  opacity:1;
+}
+
+.inputSrcSubmit{
+  border: 1px solid black;
+  background: url('../images/search3.png') center center no-repeat;
+  background: cover;
+
+  color: white;
+  border:none;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  z-index: 3;
+  opacity: .8;
+  cursor: pointer;
+}
+.inputSrcSubmit:hover{
+  opacity: 1;
+}

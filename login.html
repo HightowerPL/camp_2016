@@ -4,24 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Efi3 - Login </title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/button.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container">
+    <div class="containerLogin">
       <div class="login-background">
         <div class="row">
-          <div class="small-3 column">
+          <div class="small-12 small-centered medium-3 medium-align-right column">
             <div class="logo">
-              <a><img src="images/efi_logo.png" align="center" alt="efi3"></a>
+              <a><img src="images/efi_logo.png" alt="efi3"></a>
             </div>
           </div>
-          <div class="small-6 small-centered columns end">
+          <div class="small-12 small-centered medium-9 large-6 large-centered columns end">
             <div class="box bg-blue">
               <header>
                 <h1>Login</h1>
@@ -29,25 +27,31 @@
               </header>
               <form>
                 <div class="avatar">
-                  <img src="images/avatar.jpg" align="center"/>
+                  <img src="images/avatar.jpg" alt="avatar"/>
                 </div>
-                <p>12756453 <span class="info badge"><i class="fi-x"></i></span></p>
+                <span class="nrID">12756453</span>&nbsp;<span class="info badge"><i class="fi-x"></i></span>
+                <br/>
                 <div class="row">
-                    <div class="small-10 columns">
-                      <input type="text" class="input_pass">
-                    </div>
-                    <div class="small-2 columns left">
-                      <a href="#"><img src="images/keyboard.png" alt="key_pic"></a>
-                    </div>
-                </div>
-                <!--<div class="medium-10 columns">
-                  <div class="czer_pasek">
-                    <p>POPRAW</p>
+                  <div class="small-12 small-centered medium-11 columns">
+                      <input type="text" class="inputPass">
                   </div>
-                </div>-->
+                  <div class="small-12 small-centered medium-1 columns keyboard">
+                      <a href="#"><img src="images/keyboard.png" alt="key_pic"></a>
+                  </div>
+                </div>
+
+                <div class="passWrong">
+                  <div class="arrow_up">
+                  </div>
+                  <div class="czer_pasek">
+                      <p>Nieprawidlowe haslo <i class="fi-x closeX"></i></p>
+                  </div>
+                </div>
+
                 <div class="row">
-                  <a href="#">SELECT OTHER </a>
-                  <button type="submit" class="button logBtn">GO</button>
+                  <div class="small-centered medium-4 medium-offset-1 column"><a href="#"><span>SELECT OTHER</span></a></div>
+                  <div class="small-centered medium-4 column"><button type="submit" class="button logBtn"><span>GO</span></button></div>
+
                 </div>
               </form>
             </div>
@@ -55,21 +59,23 @@
         </div>
 
         <footer>
-        <div class="row">
-          <div class="small-10 columns centered">
-            <div class="menu-centered">
-              <ul class="menu">
-                <li><a href="#">SECURITY</a></li>
-                <li><a href="#">LOGGIN IN</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-              </ul>
+          <div class="row">
+            <div class="small-12 medium-6 medium-offset-3 columns">
+                <ul class="menu align-center footLog">
+                  <li><a href="#">SECURITY</a></li>
+                  <li><a href="#">LOGGIN IN</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                  <li class="align-right"><a href="#"><i class="fi-social-facebook"></i></a></li>
+                </ul>
             </div>
           </div>
-        </div>
         </footer>
 
       </div>
     </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/login.js"></script>
   </body>
   </html>
