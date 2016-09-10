@@ -22,7 +22,6 @@ a, a:hover {
 }
 .keyboard{
   padding: 5px 0px;
-
 }
 .logBtn{
   background:white;
@@ -84,16 +83,24 @@ a, a:hover {
     border-radius: 4px;
   }
 }
-
-.closeX{
-  cursor: pointer;
-}
-.inputPass{
-  border-radius:4px;
-}
 .nrID{
   font-weight:700;
   padding-bottom: 10px;
+}
+.inputPass{
+  margin-top:15px;
+  padding:5px;
+  border-radius:4px;
+}
+.keyboard{
+  padding: 20px 5px 0 0;
+}
+.closeX{
+  cursor: pointer;
+}
+.selOther{
+  padding: 5px 0 0 0px;
+  float: right;
 }
 .avatar{
   position: absolute;

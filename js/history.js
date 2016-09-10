@@ -29,4 +29,3 @@ ajaxPost({}, "/data/history", "GET", function(response) {
 
   }
 });
-ajaxPost();

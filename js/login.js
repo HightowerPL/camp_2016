@@ -1,6 +1,9 @@
+$(document).foundation();
+
 $(document).ready(function(){
     $('.logBtn').on('click', function(event) {
-      var password = $('.inputPass').val();
+      let password = $('.inputPass').val();
+      alert(password);
       sendAjax(password);
     });
 
@@ -11,7 +14,7 @@ $(document).ready(function(){
 
   function sendAjax(para){
     $.ajax({
-      method: "POST",
+      type: "POST",
       data: {
         login: "efi",
         password: para
@@ -26,8 +29,4 @@ $(document).ready(function(){
         console.log(response);
       }
     });
-  }
-
-  function test(pass){
-    alert("test " + pass);
   }

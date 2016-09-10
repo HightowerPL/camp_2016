@@ -57,24 +57,24 @@ header {
   nav{
     ul.menu{
       li{
-        padding-top:20px;
+        padding:20px 0 0 0;
         width: 80px;
         margin: 0;
         list-style: none;
-        display: inline-block;
+        display: inline-flex;
         text-align: center;
         @include transition(background-color 1s);
         &:hover{
           background-color: black;
         }
         a{
+          margin: auto;
           display:block;
           color:white;
         }
         i{
           margin-right:0;
           font-size:2.5rem;
-
         }
         p{
           font-size:1rem;
