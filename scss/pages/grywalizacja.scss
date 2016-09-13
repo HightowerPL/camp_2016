@@ -1,0 +1,151 @@
+.badge-icon{
+  width: 20px;
+  padding-top: 80%;
+}
+main{
+  padding-top: 20px;
+}
+.flex{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  background-color: #d9dada;
+  flex-wrap: wrap;
+}
+section{
+  padding: 0px 0 25px 0;
+}
+.allButton, .uncomButton{
+  width: 125px;
+}
+.show{
+  padding-top: 5px;
+}
+.square{
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin: 0 10px 0 0;
+  border-radius: 4px;
+  width: 185px;
+  height: 185px;
+  background-color: white;
+  background-size: cover;
+  overflow: hidden;
+  @include transition(box-shadow .4s);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 7px #888888;
+  }
+  i {
+    font-size: 3rem;
+    position: absolute;
+    width: 40px;
+    &.fi-lock {
+      right: 15px;
+      color: #d9dada;
+    }
+    &.fi-check {
+      display: none;
+      left: 12px;
+    }
+  }
+}
+.one-one, .one-four, .one-five{
+  background-image: url("../images/gry/badge1.png");
+  color: white;
+}
+
+.one-two, .one-three, .one-four, .one-five, .one-six{
+  background-image: url("../images/gry/badge1.png");
+}
+
+.two-one, .two-two, .two-three, .two-four, .two-five, .two-six, .two-seven, .two-eight, .two-nine, .two-ten, , .two-eleven{
+  background-image: url("../images/gry/badge2.png");
+  .fi-star{
+    font-size: 2rem;
+    position: absolute;
+    width: 40px;
+    color: #d9dada;
+    &.one{
+      right: 5px;
+    }
+    &.two{
+      right:30px;
+    }
+    &.three{
+      right: 55px;
+    }
+  }
+}
+
+.two-one, .two-two{
+  color: white;
+  .fi-star{
+    color: white;
+  }
+}
+.loading{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.progress{
+  height: 100%;
+  background-color: #13bdd2;
+  float: right;
+}
+.loading-1-1{
+  @extend .loading;
+  background-image: url("../images/gry/biegacz.png");
+}
+.progress-1-1{
+  @extend .progress;
+  width: 0%;
+}
+.loading-1-4{
+  @extend .loading;
+  background-image: url("../images/gry/cele.png");
+}
+.progress-1-4{
+  @extend .progress;
+  width: 90%;
+}
+.loading-1-5{
+  @extend .loading;
+  background-image: url("../images/gry/krawat.png");
+}
+.progress-1-5{
+  @extend .progress;
+  width: 48%;
+}
+.loading-2-1{
+  @extend .loading;
+  background-image: url("../images/gry/klucze.png");
+}
+.progress-2-1{
+  @extend .progress;
+  width: 0%;
+}
+.loading-2-2{
+  @extend .loading;
+  background-image: url("../images/gry/skarbonka.png");
+}
+.progress-2-2{
+  @extend .progress;
+  width: 24%;
+}
+.badgeTitle{
+  margin: 0;
+  width: 100%;
+  position: absolute ;
+  top: 75%;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+.percent{
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 7%;
+}

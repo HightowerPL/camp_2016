@@ -14,7 +14,7 @@ a, a:hover {
   padding: 30px;
   text-align: center;
   color:white;
-  background: $blue;
+  background-color: $blue;
   border-radius:4px;
   header{
     padding-bottom:60px;
@@ -40,12 +40,12 @@ a, a:hover {
   margin: auto;
   margin-bottom: 10px;
   padding: 10%;
-  border:2px solid rgba(255,255,255, 0.5);
-  border-radius:4px;
-  background:none;
+  border: 2px solid rgba(255,255,255, 0.5);
+  border-radius: 4px;
+  background: none;
   width: 160px;
   height: 150px;
-  float:right;
+  float: right;
 }
 
 .login-background{
@@ -53,10 +53,7 @@ a, a:hover {
   padding: 20px 0 20px 0;
   position: relative;
   background-image: url('../images/efi3.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size:cover;
+  @include background-size(cover);
 }
 .passWrong{
   display: none;
@@ -74,23 +71,26 @@ a, a:hover {
     border-bottom: 5px solid red;
   }
   .czer_pasek{
-    width: 200px;
-    padding: 5px;
+    padding: 10px 10px 10px 10px;
+    width: 250px;
     height: auto;
     color: white;
     border: 0;
     background: red;
     border-radius: 4px;
+    i{
+      float: right;
+    }
   }
 }
 .nrID{
-  font-weight:700;
+  font-weight: 700;
   padding-bottom: 10px;
 }
 .inputPass{
-  margin-top:15px;
-  padding:5px;
-  border-radius:4px;
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 4px;
 }
 .keyboard{
   padding: 20px 5px 0 0;
@@ -135,7 +135,7 @@ footer {
       font-size: 1rem;
     }
     li {
-      padding:0;
+      padding: 0;
       border-bottom: 1px solid transparent;
       a{
         transition: color .4s;

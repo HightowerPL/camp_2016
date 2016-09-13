@@ -1,117 +1,29 @@
-@mixin transition($property) {
-     -moz-transition: $property;
-	     -o-transition: $property;
-	    -ms-transition: $property;
-	-webkit-transition: $property;
-          transition: $property;
-}
-
 .container{
-  margin:auto;
+  height: 100%;
+  margin: auto;
   i{
-    font-size:2.5rem;
+    font-size: 2.5rem;
   }
 }
-//Header - Logo, Avatar, Nav, PowerBtn ---- Search input in search.scss
-header {
-  padding-bottom:0;
-  background-color: $blue;
-  .logoAva {
-    padding-top:20px;
-    img {
-      border-radius: 4px;
-      height: 80px;
-      width: 80px;
-    }
-    .logoM{
-      border: 2px solid rgba(255,255,255, 0.5);
-      padding: 15px 10px 15px 10px;
-    }
-  }
-  .nameMsgSet{
-    padding-top:20px;
-    i{
-      font-size:1.5rem;
-      &:hover{
-        color:white;
-      }
-    }
-    .has-tip{
-      border:0;
-      padding-top:8px;
-    }
-    .user{
-      color:white;
-      font-size:1.5rem;
-    }
-    .settings{
-      font-size: 2rem;
-      &:hover{
-        transform-origin: 49% 55%;
-        animation: obrot 3s linear 0s infinite;
-      }
-    }
-   }
-  }
-
-  nav{
-    ul.menu{
-      li{
-        padding:20px 0 0 0;
-        width: 80px;
-        margin: 0;
-        list-style: none;
-        display: inline-flex;
-        text-align: center;
-        @include transition(background-color 1s);
-        &:hover{
-          background-color: black;
-        }
-        a{
-          margin: auto;
-          display:block;
-          color:white;
-        }
-        i{
-          margin-right:0;
-          font-size:2.5rem;
-        }
-        p{
-          font-size:1rem;
-        }
-      }
-    }
-  }
-  .srcLog{
-    display:inline-block;
-    float:right;
-    .fi-power{
-      float:right;
-      padding-left:10px;
-      border-left: 2px solid rgba(255,255,255, 1);;
-      color:$red;
-      @include transition(color .4s);
-      &:hover{
-        color: red;
-      }
-    }
-  }
 
 //Finance Life Stream
 main{
-  background-color:#d9dada;
-  color:black;
-  padding:30px 0 30px 0;
+  background-color: $grey;
+  color: black;
+  padding: 0 0 30px 0;
   .finance_life{
+    .streamValues{
+      padding-top: 8px;
+    }
     h1{
-      color:black;
+      color: black;
     }
     h3{
-      padding-bottom:0;
-      margin-bottom:0;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
     p{
-      font-size:1rem;
+      font-size: 1rem;
     }
     .money{
     }
@@ -119,51 +31,54 @@ main{
 }
 //Add buttons & switch
 .add, .accAna{
-  float:right;
-  margin:0;
-  padding:20px;
+  float: right;
+  margin: 0;
+  padding: 20px;
+}
+.addTxt,.aaTxt{
+  padding-top: 5px;
 }
 .addBtn{
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight:300;
+  font-weight: 300;
   padding: 10px 0 10px 0;
-  margin-left:10px;
-  margin-bottom:0;
-  width:100px;
-  background-color:$blue;
-  border-radius:2px;
-  color:white;
+  margin-left: 10px;
+  margin-bottom: 0;
+  width: 100px;
+  background-color: $blue;
+  border-radius: 2px;
+  color: white;
   &:hover{
-    background-color:white;
-    color:$blue;
+    background-color: white;
+    color: $blue;
   }
 }
 .switch{
-  margin:0;
+  margin: 0;
 }
 //Products
   .prodBtn {
-    margin-left:15px;
-    margin-bottom:10px;
-    padding:20px 5px 20px 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 20px 5px 20px 10px;
     background-color: white;
     border-radius: 4px;
-    display:inline;
+    display: inline;
     @include transition(background .4s);
       i{
-        color:gray;
-        float:left;
-        padding:0 10px 0 5px;
+        color: gray;
+        float: left;
+        padding: 0 10px 0 5px;
       }
       p{
-        margin:0;
+        margin: 0;
       }
     &:hover{
       background: $green;
-      color:white;
+      color: white;
       cursor: pointer;
       i{
-        color:white;
+        color: white;
       }
     }
   }
@@ -171,7 +86,7 @@ main{
     @extend .prodBtn;
     background-color: $blue;
     i{
-      color:white;
+      color: white;
     }
   }
   //History list
@@ -180,14 +95,14 @@ main{
     background-color: white;
     border-radius: 4px;
     overflow: auto;
-    margin:auto;
-    padding:0;
+    margin: auto;
+    padding: 0;
     ul {
       list-style-type: none;
-      margin-left:10px;
-      margin-right:20px;
+      margin-left: 10px;
+      margin-right: 20px;
       li{
-        padding:10px 0 10px 0;
+        padding: 10px 0 10px 0;
         border-bottom: 1px solid rgba(0,0,0, 0.3);
         &:hover{
           background-color: rgba(19,189,210, 0.5)

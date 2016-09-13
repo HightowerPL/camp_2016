@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="pl">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Efi3 - Dashboard</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
@@ -16,7 +16,7 @@
         <div class="row">
           <div class="small-12 small-centered medium-2 columns logoAva">
                 <a href="#"><img class="logoM" src="images/efi_logo.png" alt="Efi3"/></a>
-                <a href="#"><img class="avatarM" src="images/avatar.jpg" alt="Profile"/></a>
+                <a href="#"><img class="avatarM" src="images/avatar.png" alt="Profile"/></a>
           </div>
           <div class="small-12 small-centered medium-3 columns nameMsgSet">
               <div class="row">
@@ -25,24 +25,24 @@
               <div class="row">
                     <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Nie masz nowych wiadomości">
                     <a href="#"><i class="fi-mail"></i></a>
-                  </span>&nbsp;&nbsp;
+                  </span>&nbsp;&nbsp;&nbsp;
                     <a class="settings" href="#"><i class="fi-widget"></i></a>
               </div>
           </div>
           <div class="small-12 medium-4 columns">
-            <nav class="menu-centered">
+            <nav>
               <ul class="menu">
                 <li>
-                  <a href="#"><i class="fi-mail"></i><p>HOME</p></a>
+                  <a href="#"><i class="fi-mail"></i><p>HOME</p><div class="half-circle"></div></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fi-magnifying-glass"></i><p>ANALYSE</p></a>
+                  <a href="#"><i class="fi-magnifying-glass"></i><p>ANALYSE</p><div class="half-circle"></div></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fi-clipboard-notes"></i><p>PLAN</p></a>
+                  <a href="#"><i class="fi-clipboard-notes"></i><p>PLAN</p><div class="half-circle"></div></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fi-dollar-bill"></i><p>EARN</p></a>
+                  <a href="#"><i class="fi-dollar-bill"></i><p>EARN</p><div class="half-circle"></div></a>
                 </li>
               </ul>
             </nav>
@@ -58,13 +58,14 @@
           </div>
         </div>
       </header>
-<!-- Poczatek Finance Life Stream -->
+
       <main>
+        <!-- Poczatek Finance Life Stream -->
         <section class="finance_life">
           <div class="row">
-            <div class="small-12 medium-9 columns">
+            <div class="small-12 medium-8 columns">
               <h1>Finance life stream</h1>
-              <div class="row">
+              <div class="row streamValues">
                 <div class="small-4 columns">
                   <h3>Balance</h3>
                   <span class="livebal" style="font-size:24px;"></span>
@@ -80,15 +81,15 @@
               </div>
             </div>
 
-            <div class="medium-3 columns">
+            <div class="medium-4 columns">
               <div class="row add align-middle">
-                <span>Add&nbsp;</span>
+                <span class="addTxt">Add&nbsp;</span>
                 <a href="" class="button addBtn">BANK</a>
                 <a href="" class="button addBtn">PAYMENT</a>
               </div>
-              <div class="row accAna align-middle">
-                <span>Account analysis &nbsp;</span>
-                <div class="success switch">
+              <div class="row accAna">
+                <span class="aaTxt">Account analysis &nbsp;&nbsp;</span>
+                <div class="success large switch">
                   <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
                   <label class="switch-paddle" for="yes-no">
                     <span class="switch-active" aria-hidden="true">ON</span>
@@ -98,16 +99,17 @@
               </div>
             </div>
           </div>
-        </section><br>
-
+        </section>
+  <!-- Wykres -->
         <section class="wykres">
           <div class="row">
             <div class="small-12 columns">
               <img src="images/wykres.png" alt="wykres">
             </div>
-          </div><br>
-
+          </div>
+        </section>
   <!-- Segment po wykresie -->
+        <section class="productsHistory">
           <div class="row">
             <!---Produkty -->
             <div class="small-12 medium-6 columns">

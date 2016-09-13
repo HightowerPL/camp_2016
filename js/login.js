@@ -1,14 +1,13 @@
 $(document).foundation();
-
 $(document).ready(function(){
     $('.logBtn').on('click', function(event) {
       let password = $('.inputPass').val();
-      alert(password);
       sendAjax(password);
+      return false;
     });
 
     $('.fi-x').on('click', function(event) {
-      $('.passWrong').fadeOut('slow');
+      $('.passWrong').fadeOut();
     });
 });
 
@@ -21,12 +20,10 @@ $(document).ready(function(){
       },
       url: "https://efigence-camp.herokuapp.com/api/login/",
       error: function(response) {
-        $('.passWrong').fadeIn('slow');
-        console.log(response.responseText);
+        $('.passWrong').fadeIn();
       },
       success: function(response) {
         alert("Haslo jest poprawne");
-        console.log(response);
       }
     });
   }

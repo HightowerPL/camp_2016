@@ -5,3 +5,11 @@
 	-webkit-transition: $property;
           transition: $property;
 }
+
+@mixin background-size($property) {
+-webkit-background-size: $property;
+   -moz-background-size: $property;
+     -o-background-size: $property;
+         -ms-transition: $property;
+        background-size: $property;
+}
