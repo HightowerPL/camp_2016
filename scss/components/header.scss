@@ -2,21 +2,16 @@
 header {
   padding-bottom:0;
   background-color: #13bdd2;
-  .logoAva {
+  .logoAva{
     padding-top:20px;
-    img {
+    .logoM{
+      border: 1px solid rgba(255,255,255, 0.3);
+      padding: 15px 10px 15px 10px;
+    }
+    img{
       border-radius: 4px;
       height: 80px;
       width: 80px;
-      .logoM{
-        border: 1px solid rgba(255,255,255, 0.3);
-        padding: 15px 10px 15px 10px;
-      }
-      .avatarM{
-        border-radius: 4px;
-        height: 80px;
-        width: 80px;
-        }
       }
     }
   .nameMsgSet{
@@ -84,7 +79,6 @@ header {
           font-size: 2.5rem;
         }
         p{
-
           font-size: 1rem;
         }
       }
