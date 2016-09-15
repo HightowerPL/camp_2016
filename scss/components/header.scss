@@ -8,6 +8,10 @@ header {
       border-radius: 4px;
       height: 80px;
       width: 80px;
+      .logoM{
+        border: 1px solid rgba(255,255,255, 0.3);
+        padding: 15px 10px 15px 10px;
+      }
       .avatarM{
         border-radius: 4px;
         height: 80px;
@@ -15,11 +19,6 @@ header {
         }
       }
     }
-    .logoM{
-      border: 1px solid rgba(255,255,255, 0.3);
-      padding: 15px 10px 15px 10px;
-    }
-  }
   .nameMsgSet{
     padding-top:20px;
     i{

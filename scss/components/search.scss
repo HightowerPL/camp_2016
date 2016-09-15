@@ -26,29 +26,29 @@
   margin: 0;
   z-index: 4;
   opacity: 0;
-  @include transition(width .4s);
+  @include transition(opacity 2s);
+  @include transition(width 2s);
   float: right;
-}
-.inputSrcText:focus{
-  position: absolute;
-  right: 55px;
-  width: 200px;
-  cursor: text;
-  background: $dark-blue;
-  box-shadow: none;
-  border:none;
-  color: white;
-  border-bottom: 1px dotted white;
-  padding-bottom: 0px;
-  z-index: 1;
-  opacity:1;
+  &:focus{
+    position: absolute;
+    right: 55px;
+    width: 200px;
+    cursor: text;
+    background: $dark-blue;
+    box-shadow: none;
+    border:none;
+    color: white;
+    border-bottom: 1px dotted white;
+    padding-bottom: 0px;
+    z-index: 1;
+    opacity:1;
+  }
 }
 
 .inputSrcSubmit{
   border: 1px solid black;
   background: url('../images/search3.png') center center no-repeat;
   background: cover;
-
   color: white;
   border:none;
   font-weight: bold;
@@ -57,7 +57,7 @@
   z-index: 3;
   opacity: .8;
   cursor: pointer;
-}
-.inputSrcSubmit:hover{
-  opacity: 1;
+  &:hover{
+    opacity: 1;
+  }
 }
