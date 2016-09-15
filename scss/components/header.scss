@@ -5,9 +5,27 @@ header {
   .logoAva {
     padding-top:20px;
     img {
+      position: relative;
       border-radius: 4px;
       height: 80px;
       width: 80px;
+      .avatarM{
+        position: relative;
+        &:hover{
+          .blackSqr{
+            height: 100%;
+          }
+        }
+        .blackSqr{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width:100%;
+          height: 0;
+          background-color: rgba(0, 0, 0, 0.3);
+          transition: height .4s;
+        }
+      }
     }
     .logoM{
       border: 1px solid rgba(255,255,255, 0.3);

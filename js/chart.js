@@ -19,8 +19,6 @@ ajaxPost({}, "/data/history", "GET", function(response) {
   for(var i=0; i < 15; i++) {
     dane[i] = response.content[i].amount;
   }
-  alert('Dane po petli for' + dane);
-
 
 $(function () {
     $('#container').highcharts({
@@ -29,10 +27,6 @@ $(function () {
         },
         title: {
             text: 'US and USSR nuclear stockpiles'
-        },
-        subtitle: {
-            text: 'Source: <a href="http://thebulletin.metapress.com/content/c4120650912x74k7/fulltext.pdf">' +
-                'thebulletin.metapress.com</a>'
         },
         xAxis: {
             allowDecimals: false,
