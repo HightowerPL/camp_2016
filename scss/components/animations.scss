@@ -1,3 +1,9 @@
 @keyframes obrot{
   to {transform: rotate(360deg);}
 }
+
+@keyframes jump{
+     0%   {top:10px}
+    50%  {top: 0px}
+    100% {top: 10px}
+}
