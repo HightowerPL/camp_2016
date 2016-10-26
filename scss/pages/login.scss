@@ -1,146 +1,132 @@
 html, body{
   height:100%;
 }
-
-.containerLogin{
-  height:100%;
-}
-
 a, a:hover {
   color:white;
 }
 
-.bg-blue{
-  padding: 30px;
-  text-align: center;
-  color:white;
-  background-color: $blue;
-  border-radius:4px;
-  header{
-    padding-bottom:60px;
-  }
-}
-.keyboard{
-  padding: 5px 0px;
-}
-.logBtn{
-  background:white;
-  color:black;
-  border-radius:4px;
-  width:150px;
-  padding-top:10px;
-  padding-bottom:10px;
-  &:hover{
-    background-color: $dark-blue;
-    font-weight:300;
-  }
-}
-
-.logo{
-  margin: auto;
-  margin-bottom: 10px;
-  padding: 10%;
-  border: 2px solid rgba(255,255,255, 0.5);
-  border-radius: 4px;
-  background: none;
-  width: 160px;
-  height: 150px;
-  float: right;
-}
-
-.login-background{
-  height: 100%;
-  padding: 20px 0 20px 0;
-  position: relative;
-  background-image: url('../images/efi3.jpg');
-  @include background-size(cover);
-}
-.passWrong{
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  right: 0;
-  bottom: 0;
-  .arrow_up {
-    margin-left: 10px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid red;
-  }
-  .czer_pasek{
-    padding: 10px 10px 10px 10px;
-    width: 250px;
-    height: auto;
-    color: white;
-    border: 0;
-    background: red;
-    border-radius: 4px;
-    i{
+.containerLogin{
+  height:100%;
+  .login-background{
+    height: 100%;
+    padding: 20px 0 20px 0;
+    position: relative;
+    background-image: url('../images/efi3.jpg');
+    @include background-size(cover);
+    .logo{
+      margin: auto;
+      margin-bottom: 10px;
+      padding: 10%;
+      border: 2px solid rgba(255,255,255, 0.5);
+      border-radius: 4px;
+      background: none;
+      width: 160px;
+      height: 150px;
       float: right;
     }
-  }
-}
-.nrID{
-  font-weight: 700;
-  padding-bottom: 10px;
-}
-.inputPass{
-  margin-top: 15px;
-  padding: 5px;
-  border-radius: 4px;
-}
-.keyboard{
-  padding: 20px 5px 0 0;
-}
-.closeX{
-  cursor: pointer;
-}
-.selOther{
-  padding: 5px 0 0 0px;
-  float: right;
-}
-.avatar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 100%;
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: white;
-  overflow: hidden;
-}
-form{
-  position: relative;
-  border: 2px solid rgba(255,255,255,0.2);
-  border-radius: 4px;
-  margin: 60px 0;
-  padding: 60px 20px 70px 20px;
-  .badge{
-    cursor: pointer;
-  }
-}
-footer {
-  color: white;
-  .footLog{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 0.75rem;
-    i{
-      font-size: 1rem;
+
+// Blue login box - Start
+    .bg-blue{
+      padding: 30px;
+      text-align: center;
+      color:white;
+      background-color: $blue;
+      border-radius:4px;
+      header{
+        padding-bottom:60px;
+      }
+      form{
+        position: relative;
+        border: 2px solid rgba(255,255,255,0.2);
+        border-radius: 4px;
+        margin: 60px 0;
+        padding: 60px 20px 70px 20px;
+        .badge{
+          cursor: pointer;
+        }
+        .nrID{
+          font-weight: 700;
+          padding-bottom: 10px;
+        }
+        .inputPass{
+          margin-top: 15px;
+          padding: 5px;
+          border-radius: 4px;
+        }
+        .keyboard{
+          padding: 20px 5px 0 0;
+        }
+        .closeX{
+          cursor: pointer;
+        }
+        .selOther{
+          padding: 5px 0 0 0px;
+          float: right;
+        }
+        .avatar{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 100%;
+          margin: auto;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: white;
+          overflow: hidden;
+        }
+    // Red stripe alerting about wrong password
+        .passWrong{
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 25%;
+          right: 0;
+          bottom: 0;
+          .arrow_up {
+            margin-left: 10px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid red;
+          }
+          .czer_pasek{
+            padding: 10px 10px 10px 10px;
+            width: 250px;
+            height: auto;
+            color: white;
+            border: 0;
+            background: red;
+            border-radius: 4px;
+            i{
+              float: right;
+            }
+          }
+        }
+    // Red Stripe - End
+      }
     }
-    li {
-      padding: 0;
-      border-bottom: 1px solid transparent;
-      a{
-        transition: color .4s;
-        &:hover{
-          color: $blue;
+// Blue Login Box - End
+    footer {
+      color: white;
+      .footLog{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 0.75rem;
+        i{
+          font-size: 1rem;
+        }
+        li {
+          padding: 0;
+          border-bottom: 1px solid transparent;
+          a{
+            transition: color .4s;
+            &:hover{
+              color: $blue;
+            }
+          }
         }
       }
     }

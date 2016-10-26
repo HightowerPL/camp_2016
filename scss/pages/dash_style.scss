@@ -29,66 +29,6 @@ main{
     }
   }
 }
-//Add buttons & switch
-.add, .accAna{
-  float: right;
-  margin: 0;
-  padding: 20px;
-}
-.addTxt,.aaTxt{
-  padding-top: 5px;
-}
-.addBtn{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300;
-  padding: 10px 0 10px 0;
-  margin-left: 10px;
-  margin-bottom: 0;
-  width: 100px;
-  background-color: $blue;
-  border-radius: 2px;
-  color: white;
-  &:hover{
-    background-color: white;
-    color: $blue;
-  }
-}
-.switch{
-  margin: 0;
-}
-//Products
-  .prodBtn {
-    margin-left: 15px;
-    margin-bottom: 10px;
-    padding: 20px 5px 20px 10px;
-    background-color: white;
-    border-radius: 4px;
-    display: inline;
-    @include transition(background .4s);
-      i{
-        color: gray;
-        float: left;
-        padding: 0 10px 0 5px;
-      }
-      p{
-        margin: 0;
-      }
-    &:hover{
-      background: $green;
-      color: white;
-      cursor: pointer;
-      i{
-        color: white;
-      }
-    }
-  }
-  .loans{
-    @extend .prodBtn;
-    background-color: $blue;
-    i{
-      color: white;
-    }
-  }
   //History list
   .list_component{
     max-height: 350px;

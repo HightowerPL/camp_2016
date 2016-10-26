@@ -27,7 +27,7 @@ header {
         .three{
           animation: jump;
           animation-duration:.7s;
-          animation-iteration-count: 2;
+          animation-iteration-count: 1;
         }
       }
     }
@@ -139,14 +139,4 @@ header {
   .srcLog{
     display: inline-block;
     float: right;
-    .fi-power{
-      float: right;
-      padding-left: 20px;
-      border-left: 1px solid rgba(255,255,255, .5);;
-      color: #e21a61;
-      @include transition(color .4s);
-      &:hover{
-        color: red;
-      }
-    }
   }

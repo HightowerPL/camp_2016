@@ -49,9 +49,10 @@
 @include motion-ui-animations;
 //Wlasne style
 @import 'util/mixins';
+@import "components/variables";
+@import 'components/buttons';
 @import 'components/header';
 @import "components/icons";
-@import "components/variables";
 @import "components/fonts";
 @import "components/animations";
 @import "components/search";

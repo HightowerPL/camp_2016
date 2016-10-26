@@ -1,0 +1,93 @@
+//1. Login Page
+.logBtn{
+  background:white;
+  color:black;
+  border-radius:4px;
+  width:150px;
+  padding-top:10px;
+  padding-bottom:10px;
+  &:hover{
+    background-color: $dark-blue;
+    font-weight:300;
+  }
+}
+.keyboard{
+  padding: 5px 0px;
+}
+//2. Header
+.fi-power{
+  float: right;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255,255,255, .5);;
+  color: #e21a61;
+  @include transition(color .4s);
+  &:hover{
+    color: red;
+  }
+}
+
+//3. Dashboard
+//3.1. Add buttons & Account Analysis switch
+.add, .accAna{
+  float: right;
+  margin: 0;
+  padding: 20px;
+}
+.addTxt,.aaTxt{
+  padding-top: 5px;
+}
+.addBtn{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  padding: 10px 0 10px 0;
+  margin-left: 10px;
+  margin-bottom: 0;
+  width: 100px;
+  background-color: $blue;
+  border-radius: 2px;
+  color: white;
+  &:hover{
+    background-color: white;
+    color: $blue;
+  }
+}
+.switch{
+  margin: 0;
+}
+//3.2. Products buttons
+  .prodBtn {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 20px 5px 20px 10px;
+    background-color: white;
+    border-radius: 4px;
+    display: inline;
+    @include transition(background .4s);
+      i{
+        color: gray;
+        float: left;
+        padding: 0 10px 0 5px;
+      }
+      p{
+        margin: 0;
+      }
+    &:hover{
+      background: $green;
+      color: white;
+      cursor: pointer;
+      i{
+        color: white;
+      }
+    }
+  }
+  .loans{
+    @extend .prodBtn;
+    background-color: $blue;
+    i{
+      color: white;
+    }
+  }
+  //4. Grywalizacja
+  .allButton, .uncomButton{
+    width: 125px;
+  }

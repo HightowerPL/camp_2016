@@ -1,8 +1,40 @@
 @keyframes obrot{
   to {transform: rotate(360deg);}
 }
+@-moz-keyframes obrot{
+  to {transform: rotate(360deg);}
+}
+@-webkit-keyframes obrot{
+  to {transform: rotate(360deg);}
+}
+@-o-keyframes obrot{
+  to {transform: rotate(360deg);}
+}
+@-ms-keyframes obrot{
+  to {transform: rotate(360deg);}
+}
 
 @keyframes jump{
+     0%   {top:10px}
+    50%  {top: 0px}
+    100% {top: 10px}
+}
+@-moz-keyframes jump{
+     0%   {top:10px}
+    50%  {top: 0px}
+    100% {top: 10px}
+}
+@-webkit-keyframes jump{
+     0%   {top:10px}
+    50%  {top: 0px}
+    100% {top: 10px}
+}
+@-o-keyframes jump{
+     0%   {top:10px}
+    50%  {top: 0px}
+    100% {top: 10px}
+}
+@-ms-keyframes jump{
      0%   {top:10px}
     50%  {top: 0px}
     100% {top: 10px}
