@@ -1,5 +1,7 @@
 html, body{
   height:100%;
+  margin: 0 auto;
+  padding: 0;
 }
 a, a:hover {
   color:white;
@@ -12,7 +14,7 @@ a, a:hover {
     padding: 20px 0 20px 0;
     position: relative;
     background-image: url('../images/efi3.jpg');
-    @include background-size(cover);
+    background-size: cover;
     .logo{
       margin: auto;
       margin-bottom: 10px;
@@ -43,6 +45,9 @@ a, a:hover {
         padding: 60px 20px 70px 20px;
         .badge{
           cursor: pointer;
+          i{
+            font-size: .75rem;
+          }
         }
         .nrID{
           font-weight: 700;
@@ -55,9 +60,6 @@ a, a:hover {
         }
         .keyboard{
           padding: 20px 5px 0 0;
-        }
-        .closeX{
-          cursor: pointer;
         }
         .selOther{
           padding: 5px 0 0 0px;
@@ -110,21 +112,26 @@ a, a:hover {
     }
 // Blue Login Box - End
     footer {
+      padding-bottom: 10px;
       color: white;
       .footLog{
+        width: 100%;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 400;
         font-size: 0.75rem;
-        i{
-          font-size: 1rem;
-        }
         li {
+          text-align: left;
           padding: 0;
           border-bottom: 1px solid transparent;
           a{
+            padding-left: 0;
             transition: color .4s;
             &:hover{
               color: $blue;
+            }
+            i{
+              float: right;
+              font-size: 1rem;
             }
           }
         }

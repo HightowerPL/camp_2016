@@ -17,22 +17,3 @@ function getAjax(){
 }
 
 getAjax();
-
-/*
-function ajaxPost( data, endpoint, method, success) {
-  $.ajax({
-    method: "POST",
-    url: "https://efigence-camp.herokuapp.com/api/"+ endpoint,
-    data:data
-  })
-  .done(function( msg ){
-    success(msg);
-  });
-}
-
-ajaxPost({
-  login: "efi",
-  password: "camp"
-}, "login", "POST", function(response) {
-  console.log(response);
-}); */

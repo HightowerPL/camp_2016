@@ -1,5 +1,17 @@
 $(document).foundation();
 
+$('#example-menu, .finance_life, .chartBig, .productsHistory').hide();
+
+$(document).ready(function(){
+  if ($(window).width() >= 640) {
+    $('#example-menu, .finance_life, .chartBig, .productsHistory').fadeIn(1500);
+  }
+  else {
+    $('.title-bar, .finance_life, .chartBig, .productsHistory').fadeIn(1500);
+  }
+});
+
+//History code - Start
 function ajaxPost( data, endpoint, method, success ) {
 
   $.ajax({
@@ -29,3 +41,4 @@ ajaxPost({}, "/data/history", "GET", function(response) {
 
   }
 });
+//History code - End

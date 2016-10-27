@@ -1,33 +1,47 @@
-.container{
+
+html, body{
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
   i{
     font-size: 2.5rem;
   }
 }
-
 //Finance Life Stream
 main{
   background-color: $grey;
   color: black;
   padding: 0 0 30px 0;
+  section{
+    padding: 0;
+  }
   .finance_life{
     .streamValues{
-      padding-top: 8px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      .streamItem{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        h3{
+          margin: 0;
+          font-size:28px;
+        }
+        p{
+          font-size: 28px;
+        }
+      }
     }
     h1{
+      margin: 0;
       color: black;
     }
-    h3{
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-    p{
-      font-size: 1rem;
-    }
-    .money{
-    }
   }
+}
+.chartBig{
+  padding-bottom: 10px;
 }
   //History list
   .list_component{

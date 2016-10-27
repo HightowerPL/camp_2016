@@ -1,5 +1,9 @@
 $(document).foundation();
+$('.logo, .box').hide();
+
 $(document).ready(function(){
+    $('.logo, .box').fadeIn(1500);
+
     $('.logBtn').on('click', function(event) {
       let password = $('.inputPass').val();
       sendAjax(password);

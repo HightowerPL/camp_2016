@@ -11,9 +11,12 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <div class="row">
+      <header class="dashHeader">
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+        <div class="row" id="example-menu">
           <div class="small-6  medium-2 columns logoAva">
                 <div class="logoDash">
                   <a href="#"><img class="logoImg" src="images/efi_logo2.png" alt="Efi3"/><img class="three" src="images/3.png" alt="3"/></a>
@@ -22,7 +25,7 @@
                   <a href="#"><img class="avatarImg" src="images/avatar.png" alt="Profile"/><div class="change"><span><i class="fi-address-book"></i></div></a>
                 </div>
           </div>
-          <div class="small-6  medium-3 columns nameMsgSet">
+          <div class="medium-3 columns nameMsgSet">
               <div class="row">
                   <span class="user">Jan Kowalski</span>
               </div>
@@ -37,7 +40,7 @@
             <nav>
               <ul class="menu">
                 <li>
-                  <a href="#"><i class="fi-mail"></i><p>HOME</p><div class="half-circle"></div></a>
+                  <a href="#"><i class="fi-mail"></i>&nbsp;<p>HOME</p><div class="half-circle"></div></a>
                 </li>
                 <li>
                   <a href="#"><i class="fi-magnifying-glass"></i><p>ANALYSE</p><div class="half-circle"></div></a>
@@ -51,61 +54,63 @@
               </ul>
             </nav>
           </div>
-          <div class="small-12 small-centered medium-3 columns srcLog align-middle">
+          <div class="small-12 medium-3 columns srcLog align-middle">
             <a href="#"><i class="fi-power"></i></a>
             <div class="wrap">
               <form class="srcForm">
-                <input id="search" name="search" type="text" placeholder="What are you looking for?" class="inputSrcText">
-                <input id="search_submit" value="" class="inputSrcSubmit" type="submit">
+                <input class="inputSrcText" id="search" name="search" type="text" value="" >
+                <input class="inputSrcSubmit" id="search_submit" value=""  type="submit">
               </form>
             </div>
           </div>
         </div>
       </header>
 
-      <main>
+      <main class="dashMain">
         <!-- Finance Life Stream - Start -->
         <section class="finance_life">
           <div class="row">
-            <div class="small-12 medium-8 columns">
+            <div class="medium-8 columns">
               <h1>Finance life stream</h1>
-              <div class="row streamValues">
-                <div class="small-4 columns">
+              <div class="streamValues">
+                <div class="streamItem">
                   <h3>Balance</h3>
-                  <span class="livebal" style="font-size:24px;"></span>
+                  <p class="livebal"></p>
                 </div>
-                <div class="small-4 columns">
+                <div class="streamItem">
                   <h3>Available funds</h3>
-                  <span class="livefun" style="font-size:24px;"></span>
+                  <p class="livefun"></p>
                 </div>
-                <div class="small-4 columns end">
+                <div class="streamItem">
                   <h3>Scheduled payments</h3>
-                  <span class="livepay" style="font-size:24px;"></span>
+                  <p class="livepay"></p>
                 </div>
               </div>
             </div>
 
-            <div class="small-12 medium-4 columns">
-              <div class="row add align-middle">
-                <span class="addTxt">Add&nbsp;</span>
-                <a href="" class="button addBtn">BANK</a>
-                <a href="" class="button addBtn">PAYMENT</a>
-              </div>
-              <div class="row accAna">
-                <span class="aaTxt">Account analysis &nbsp;&nbsp;</span>
-                <div class="success large switch">
-                  <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-                  <label class="switch-paddle" for="yes-no">
-                    <span class="switch-active" aria-hidden="true">ON</span>
-                    <span class="switch-inactive" aria-hidden="true">OFF</span>
-                  </label>
+            <div class="medium-4 columns">
+              <div class="financeAsideButtons">
+                <div class="fabFirstPanel">
+                  <span class="addTxt">Add&nbsp;&nbsp;</span>
+                  <a href="" class="button addBtn">BANK</a>
+                  <a href="" class="button addBtn">PAYMENT</a>
+                </div>
+                <div class="fabSecondPanel">
+                  <span class="aaTxt">Account analysis&nbsp;&nbsp;</span>
+                  <div class="success large switch">
+                    <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+                    <label class="switch-paddle" for="yes-no">
+                      <span class="switch-active" aria-hidden="true">ON</span>
+                      <span class="switch-inactive" aria-hidden="true">OFF</span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
   <!-- Chart -->
-        <section class="wykres">
+        <section class="chartBig">
           <div class="row">
             <div class="small-12 columns">
               <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -117,43 +122,42 @@
           <div class="row">
             <!---Products -->
             <div class="small-12 medium-6 columns">
-              <h3>Products</h3>
-              <div class="row small-unstack">
-                <div class="columns prodBtn">
-                  <i class="fi-credit-card"></i>
-                  <p>Wallets</p>
+              <h4>Products</h4>
+              <div class="productsFlex">
+                <div class="prodBtn">
+                  <img class="wallet" src="images/wallet-Icon.png" alt="wallet"/>
+                  <p>Wallets [3]</p>
                   <p>500,000 PLN</p>
                 </div>
-                <div class="columns prodBtn">
-                  <i class="fi-lock"></i>
-                  <p>Deposits</p>
+                <div class="prodBtn">
+                  <img src="images/lock.png" alt="lock"/>
+                  <div class="redNote active">2</div>
+                  <img class="lock2" src="images/lock2.png" alt="lock2"/>
+                  <p>Deposits [7]</p>
                   <p>10,000,000 PLN</p>
                 </div>
-              </div>
 
-              <div class="row small-unstack">
-                <div class="columns prodBtn">
-                    <i class="fi-list-thumbnails"></i>
+                <div class="prodBtn">
+                    <img class="accounts" src="images/accounts-Icon.png" alt="accounts"/>
                     <p>Accounts</p>
                     <p>7,200,000 PLN</p>
                 </div>
-                <div class="columns prodBtn">
-                  <i class="fi-graph-bar"></i>
-                  <p>Funds</p>
+                <div class="prodBtn">
+                  <div class="redNote active">7</div>
+                  <div class="prodIcon funds"><hr class="line1"/><hr class="line2"/><hr class="line3"/><hr class="line4"/></div>
+                  <p>Funds [3]</p>
                   <p>7,000,000 PLN</p>
                 </div>
-              </div>
-              <div class="row small-unstack">
-                <div class="columns loans">
-                    <i class="fi-dislike"></i><p>Bank loans</p><p>-127,000,000 PLN</p>
+                <div class="prodBtn loans">
+                    <img src="images/loan-Icon.png" alt="loan Icon"/><p>Bank loans</p><p>-127,000,000 PLN</p>
                 </div>
-                <div class="columns loans" style="visibility:hidden;">
+                <div class="prodBtn loans" style="visibility:hidden;">
                 </div>
               </div>
             </div>
     <!-- History of transactions -->
             <div class="small-12 medium-6 columns">
-              <h3>History</h3>
+              <h4>History</h4>
               <div class="list_component">
                 <ul class="listHis">
                 </ul>
@@ -162,7 +166,6 @@
           </div>
         </section>
       </main>
-    </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>

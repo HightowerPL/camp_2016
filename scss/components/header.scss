@@ -1,17 +1,23 @@
 //Header - Logo, Avatar, Nav, PowerBtn ---- Search input in search.scss
+
 header {
   padding-bottom:0;
   background-color: #13bdd2;
+  .title-bar {
+    background-color: $dark-green;
+    display: flex;
+    justify-content: flex-start !important;
+  }
   .logoAva{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row;
     align-items: center;
     .logoDash,.avat{
       overflow: hidden;
       border-radius: 4px;
-      height: 80px;
-      width: 80px;
+      height: 85px;
+      width: 85px;
       position: relative;
     }
     .logoDash{
@@ -67,7 +73,11 @@ header {
     }
   }
   .nameMsgSet{
-    padding-top:20px;
+    position: relative;
+    z-index:3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     i{
       font-size:1.5rem;
       &:hover{
@@ -90,53 +100,69 @@ header {
       }
     }
    }
-  }
-
-  nav{
-    ul.menu{
-      li{
-        position: relative;
-        padding:20px 0 0 0;
-        width: 90px;
-        margin: 0;
-        list-style: none;
-        display: inline-flex;
-        text-align: center;
-        @include transition(background-color .4s);
-        .half-circle{
-          margin: auto;
-          opacity: 0;
-          background-color: black;
-          position: absolute;
-          top: 100%;
-          left: 40%;
-          border-radius: 0 0 20px 20px;
-          width: 20px;
-          height: 10px;
-          @include transition(opacity .4s);
-        }
-        &:hover{
-          background-color: black;
-          .half-circle{
-            opacity: 1;
-          }
-        }
-        a{
-          margin: auto;
-          display: block;
-          color: white;
-        }
-        i{
-          margin-right: 0;
-          font-size: 2.5rem;
-        }
-        p{
-          font-size: 1rem;
-        }
-      }
-    }
-  }
-  .srcLog{
-    display: inline-block;
-    float: right;
+   nav{
+     ul.menu{
+       position: relative;
+       z-index: 2;
+       padding:0;
+       @media only screen and (max-width: 40em){
+         display: flex;
+         justify-content: center;
+       }
+       li{
+         height: 100%;
+         position: relative;
+         width: 90px;
+         padding: 20px;
+         list-style: none;
+         @include transition(background-color .4s);
+         .half-circle{
+           margin: auto;
+           opacity: 0;
+           background-color: black;
+           position: absolute;
+           top: 100%;
+           left: 40%;
+           border-radius: 0 0 20px 20px;
+           width: 20px;
+           height: 10px;
+           @include transition(opacity .4s);
+         }
+         &:hover{
+           background-color: black;
+           .half-circle{
+             opacity: 1;
+           }
+         }
+         a{
+           height: 100%;
+           width: 100%;
+           line-height: 0;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-content: space-around;
+           color: white;
+         }
+         i{
+           margin: 0 auto;
+           font-size: 2.5rem;
+         }
+         p{
+           margin: 0;
+           font-size: 1rem;
+         }
+       }
+     }
+   }
+   .srcLog{
+     display: inline-block;
+     float: right;
+     @media only screen and (max-width: 40em){
+       padding-bottom: 10px;
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: center;
+     }
+   }
   }

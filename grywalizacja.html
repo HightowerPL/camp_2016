@@ -11,10 +11,13 @@
   </head>
 
   <body>
-    <div class="container">
 <!-- Menu -->
       <header>
-        <div class="row">
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+        <div class="row" id="example-menu">
           <div class="small-6  medium-2 columns logoAva">
                 <div class="logoDash">
                   <a href="#"><img class="logoImg" src="images/efi_logo2.png" alt="Efi3"/><img class="three" src="images/3.png" alt="3"/></a>
@@ -23,32 +26,31 @@
                   <a href="#"><img class="avatarImg" src="images/avatar.png" alt="Profile"/><div class="change"><span><i class="fi-address-book"></i></div></a>
                 </div>
           </div>
-          <div class="small-12 small-centered medium-3 columns nameMsgSet">
+          <div class="medium-3 columns nameMsgSet">
               <div class="row">
                   <span class="user">Jan Kowalski</span>
               </div>
-              <div class="row align-middle">
+              <div class="row">
                     <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Nie masz nowych wiadomości">
-                    <a href="#"><i class="fi-mail"></i></a>
-                    </span> &nbsp;&nbsp;&nbsp;
-                    <a class="settings" href="#"><i class="fi-widget"></i></a>&nbsp;&nbsp;&nbsp;
-                    <a href="#"><img class="badge-icon" src="images/gry/badge2-icon.png" alt="badge-icon"/></a>
+                      <a href="#"><i class="fi-mail"></i></a>
+                    </span>&nbsp;&nbsp;&nbsp;
+                    <a class="settings" href="#"><i class="fi-widget"></i></a>
               </div>
           </div>
           <div class="small-12 medium-4 columns">
             <nav>
               <ul class="menu">
                 <li>
-                  <a href="#"><i class="fi-mail"></i><p>HOME</p><div class="half-circle"></div></a>
+                  <a href="#"><i class="fi-mail"></i>&nbsp;<p>HOME</p><div class="half-circle"></div></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fi-magnifying-glass"></i><p>ANALIZUJ</p><div class="half-circle"></div></a>
+                  <a href="#"><i class="fi-magnifying-glass"></i><p>ANALYSE</p><div class="half-circle"></div></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fi-clipboard-notes"></i><p>PLANUJ</p><div class="half-circle"></div></a>
+                  <a href="#"><i class="fi-clipboard-notes"></i><p>PLAN</p><div class="half-circle"></div></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fi-dollar-bill"></i><p>ZARABIAJ</p><div class="half-circle"></div></a>
+                  <a href="#"><i class="fi-dollar-bill"></i><p>EARN</p><div class="half-circle"></div></a>
                 </li>
               </ul>
             </nav>
@@ -82,12 +84,13 @@
               </div>
 
               <div class="medium-4 columns">
-                <div class="row add align-middle">
-                  <span class="show">Pokaż&nbsp;</span>
-                  <a href="" class="button addBtn allButton">WSZYSTKIE</a>
-                  <a href="" class="button addBtn uncomButton">NIEUKOŃCZONE</a>
+                <div class="financeAsideButtons">
+                  <div class="fabFirstPanel">
+                    <span class="show">Pokaż&nbsp;</span>
+                    <a href="" class="button showBtn allButton">WSZYSTKIE</a>
+                    <a href="" class="button showBtn uncomButton">NIEUKOŃCZONE</a>
+                  </div>
                 </div>
-
               </div>
             </div>
           </section>
@@ -96,7 +99,7 @@
             <div class="row">
               <div class="small-12 columns">
                 <h4><strong>Odkryj</strong> zaskakujące możliwości swojego konta</h4>
-                <div class="flex">
+                <div class="flexBadges">
                   <div class="square one-one" data-progress-type="completed">
                     <i class="fi-check"></i>
                     <p class="badgeTitle">Pierwsze logowanie</p>
@@ -149,7 +152,7 @@
             <div class="row">
               <div class="small-12 columns">
                 <h4><strong>Korzystaj</strong> tak jak lubisz i zbieraj odznaki transakcyjne</h4>
-                <div class="flex">
+                <div class="flexBadges">
                   <div class="square two-one" data-progress-type="completed">
                     <i class="fi-check"></i>
                     <i class="fi-star one"></i><i class="fi-star two"></i><i class="fi-star three"></i>
@@ -220,7 +223,6 @@
           </section>
 
       </main>
-    </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
