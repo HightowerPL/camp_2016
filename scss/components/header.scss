@@ -57,9 +57,6 @@ header {
         background-color: rgba(0,0,0, .5);
         transition-delay: 1s;
         @include transition(opacity .4s);
-        i{
-          font-size: 55px;
-        }
       }
       &:hover{
         .avatarImg{
@@ -78,12 +75,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    i{
-      font-size:1.5rem;
-      &:hover{
-        color:white;
-      }
-    }
     .has-tip{
       border:0;
       padding-top:8px;
@@ -113,7 +104,7 @@ header {
          height: 100%;
          position: relative;
          width: 90px;
-         padding: 20px;
+         padding: 30px 10px 30px 10px;
          list-style: none;
          @include transition(background-color .4s);
          .half-circle{
@@ -135,22 +126,19 @@ header {
            }
          }
          a{
+           padding:0;
            height: 100%;
            width: 100%;
            line-height: 0;
            display: flex;
-           flex-wrap: wrap;
-           justify-content: center;
-           align-content: space-around;
+           flex-direction: column;
+           justify-content: space-between;;
+           align-content: center;
            color: white;
-         }
-         i{
-           margin: 0 auto;
-           font-size: 2.5rem;
-         }
-         p{
-           margin: 0;
-           font-size: 1rem;
+           p{
+             margin: auto;
+             font-size: 1rem;
+           }
          }
        }
      }
@@ -158,7 +146,7 @@ header {
    .srcLog{
      display: inline-block;
      float: right;
-     @media only screen and (max-width: 40em){
+     @media only screen and (max-width: 640px){
        padding-bottom: 10px;
        display: flex;
        flex-direction: row-reverse;

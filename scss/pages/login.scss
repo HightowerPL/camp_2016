@@ -45,9 +45,6 @@ a, a:hover {
         padding: 60px 20px 70px 20px;
         .badge{
           cursor: pointer;
-          i{
-            font-size: .75rem;
-          }
         }
         .nrID{
           font-weight: 700;
@@ -102,9 +99,6 @@ a, a:hover {
             border: 0;
             background: red;
             border-radius: 4px;
-            i{
-              float: right;
-            }
           }
         }
     // Red Stripe - End
@@ -128,10 +122,6 @@ a, a:hover {
             transition: color .4s;
             &:hover{
               color: $blue;
-            }
-            i{
-              float: right;
-              font-size: 1rem;
             }
           }
         }

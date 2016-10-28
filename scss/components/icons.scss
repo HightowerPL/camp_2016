@@ -1,0 +1,40 @@
+html, body{
+  i{
+    font-size: 24px;
+  }
+}
+//1. Login page
+.closeX{
+  cursor: pointer;
+  font-size: 12px;
+}
+.footLog{
+  i{
+    font-size: 16px;
+  }
+}
+
+//2. Dashboard
+.change{
+  .fi-address-book{
+    font-size: 55px;
+  }
+}
+.nameMsgSet{
+  i{
+    &:hover{
+      color:white;
+    }
+  }
+}
+nav{
+  ul.menu{
+    li{
+      i{
+        margin: auto;
+        font-size: 40px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

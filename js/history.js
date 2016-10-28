@@ -33,9 +33,9 @@ ajaxPost({}, "/data/history", "GET", function(response) {
     console.log(response.content[i]);
 
 
-    var html = '<li class="row"><div class="medium-2 columns"><span class="dateTrn">'
-    + response.content[i].date +'</span></div><div class="medium-6 columns"><span class="descTrn">'
-    +  response.content[i].description +'</span></div><div class="medium-4 columns"><span class="valueTrn"><strong>'
+    var html = '<li><div class="historyDate"><span class="dateTrn">'
+    + response.content[i].date.slice(-5) +'</span></div><div class="historyDesc"><span class="descTrn">'
+    +  response.content[i].description +'</span><select name="type" class="historyType"><option value="Gas">Gas</option><option value="Food">Food</option><option value="Salary">Salary</option><option value="Fun">Fun</option></select></div><div class="historyAmount"><span class="valueTrn"><strong>'
     + response.content[i].amount  + '</strong> PLN</span></div></li>';
     $('.listHis').append(html);
 
