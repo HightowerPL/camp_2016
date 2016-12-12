@@ -10,7 +10,6 @@ a, a:hover {
 .containerLogin{
   height:100%;
   .login-background{
-    height: 100%;
     padding: 20px 0 20px 0;
     position: relative;
     background-image: url('../images/efi3.jpg');
@@ -19,12 +18,14 @@ a, a:hover {
       margin: auto;
       margin-bottom: 10px;
       padding: 10%;
+      display: flex;
+      align-items: center;
       border: 2px solid rgba(255,255,255, 0.5);
       border-radius: 4px;
       background: none;
       width: 160px;
       height: 150px;
-      float: right;
+    //  float: right;
     }
 
 // Blue login box - Start
@@ -127,5 +128,11 @@ a, a:hover {
         }
       }
     }
+  }
+}
+
+@media (min-width: 640px){
+  .logo{
+    float: right;
   }
 }
